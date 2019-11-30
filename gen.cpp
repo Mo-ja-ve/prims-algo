@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
   else if(!strcmp(argv[1], std::string("list").c_str()))
   {
     std::uniform_int_distribution<int> dist1(atoi(argv[4]), atoi(argv[5])); //input values
-    std::uniform_int_distribution<int> dist2(0,atoi(argv[2])+1);  //nodes
+    std::uniform_int_distribution<int> dist2(0,atoi(argv[2])-1);  //nodes
 
     cout << 1 << endl;
 

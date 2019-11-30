@@ -16,5 +16,5 @@ test:
 	@echo
 	@echo
 	@echo -e "\e[31mTESTING\e[0m"
-	./gen list 4 8 2 17 > input2.dat
+	./gen list 18 45 3 17 > input2.dat
 	./exe < input2.dat

@@ -17,11 +17,9 @@ typedef struct edge_t{
 void add_edge(vector<vector<edge>> &graph, int first, int second, int weight){
 
     edge temp;
-    
+
     temp.v = second;
     temp.weight = weight;
-
-    cout << "adding an edge between " << first << " and " << second << " with weight " << weight << endl;
 
     graph[first].push_back(temp);
 
@@ -74,7 +72,6 @@ void load(vector<vector<edge > > &graph){
 
     for(int i = 0; i < case_links; i++)
     {
-        cout << " taking in number " << i << endl;
         cin >> first >> second >> weight;
 
         add_edge(graph, first, second, weight);
